@@ -1,0 +1,37 @@
+python2中
+raw_input()
+password = raw_input("请输入密码:")
+print('您刚刚输入的密码是:%d' % password)
+raw_input()的小括号中放入的是，提示信息，用来在获取数据之前给用户的一个简单提示
+raw_input()在从键盘获取了数据以后，会存放到等号右边的变量中
+raw_input()会把用户输入的任何值都作为字符串来对待
+
+input()
+input()函数与raw_input()类似，但其接受的输入必须是表达式
+输入的是什么类型，打印的就是什么类型
+比如：
+>>> a = input() 
+123
+>>> a
+123
+>>> type(a)
+<type 'int'>
+>>> a = input()
+abc
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<string>", line 1, in <module>
+NameError: name 'abc' is not defined
+>>> a = input()
+"abc"
+>>> a
+'abc'
+>>> type(a)
+<type 'str'>
+
+
+
+python3中
+没有raw_input()函数，只有input()
+并且 python3中的input与python2中的raw_input()功能一样
+不管输入什么，打印的 都是字符串类型
