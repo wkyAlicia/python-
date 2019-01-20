@@ -1,0 +1,14 @@
+元组不能修改和删除
+<3>count, index
+index和count与字符串和列表中的用法相同
+>>> a = ('a', 'b', 'c', 'a', 'b')
+>>> a.index('a', 1, 3) # 注意是左闭右开区间
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: tuple.index(x): x not in tuple
+>>> a.index('a', 1, 4)
+3
+>>> a.count('b')
+2
+>>> a.count('d')
+0
