@@ -1,0 +1,8 @@
+定义：具有特殊功能的标识符，已经定义好的，所以不允许开发者自己定义和关键字相同的名字的标识符
+查看关键字：（在shell中python3）
+>>> import keyword
+>>> keyword.kwlist
+and     as      assert     break     class      continue    def     del
+elif    else    except     exec      finally    for         from    global
+if      in      import     is        lambda     not         or      pass
+print   raise   return     try       while      with        yield
