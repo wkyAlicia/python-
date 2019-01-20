@@ -1,0 +1,28 @@
+break/continue只能用在循环中，除此以外不能单独使用
+
+break/continue在嵌套循环中，只对最近的一层循环起作用
+
+
+带有break的循环示例如下:
+i = 0
+while i<5:
+    i = i+1
+    print('----')
+    if i==3:
+        break
+    print(i)
+else:
+    print("==while循环过程中，如果没有执行break退出，则执行本语句==")
+    
+    
+    
+带有continue的循环示例如下:
+name = 'itheima'
+
+for x in name:
+    print('----')
+    if x == 'e': 
+        continue
+    print(x)
+else:
+    print("==while循环过程中，如果没有break则执行==")
